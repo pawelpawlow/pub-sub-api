@@ -51,7 +51,7 @@ public static class ServiceCollectionExtensions
             var builder = new ConfigurationBuilder();
             builder.AddUserSecrets<Program>();
             _secretsConfig = builder.Build();
-            services.Configure<Settings>(_secretsConfig?.GetSection("oAuthSecrets"));
+            services.Configure<Settings>(_secretsConfig.GetSection("oAuthSecrets"));
         }
         else
         {

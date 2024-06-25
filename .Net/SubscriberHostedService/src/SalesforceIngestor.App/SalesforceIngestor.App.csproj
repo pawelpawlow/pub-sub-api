@@ -19,17 +19,17 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="AvroConvert" Version="3.3.0" />    
-    <PackageReference Include="Google.Protobuf" Version="3.21.12" />    
-    <PackageReference Include="Grpc.Net.ClientFactory" Version="2.51.0" />
-    <PackageReference Include="Grpc.Tools" Version="2.51.0">
+    <PackageReference Include="AvroConvert" Version="3.4.8" />    
+    <PackageReference Include="Google.Protobuf" Version="3.27.0" />    
+    <PackageReference Include="Grpc.Net.ClientFactory" Version="2.63.0" />
+    <PackageReference Include="Grpc.Tools" Version="2.64.0">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
-    <PackageReference Include="Microsoft.Extensions.Hosting" Version="7.0.0" />    
-    <PackageReference Include="Serilog.Extensions.Hosting" Version="5.0.1" />
-    <PackageReference Include="Serilog.Settings.Configuration" Version="3.4.0" />
-    <PackageReference Include="Serilog.Sinks.Console" Version="4.1.0" />
+    <PackageReference Include="Microsoft.Extensions.Hosting" Version="8.0.0" />    
+    <PackageReference Include="Serilog.Extensions.Hosting" Version="8.0.0" />
+    <PackageReference Include="Serilog.Settings.Configuration" Version="8.0.0" />
+    <PackageReference Include="Serilog.Sinks.Console" Version="5.0.1" />
   </ItemGroup>
 
   <ItemGroup>
