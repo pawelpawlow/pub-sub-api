@@ -18,19 +18,9 @@ public class SalesforceTokenResponse
     {
         get
         {
-            if (Id == null)
-                return null;
-
-            if (Uri.TryCreate(Id, UriKind.Absolute, out var uri))
-            {
-                var segs = uri.Segments;
-
-                return segs[2].TrimEnd('/');
-            }
-            else
-            {
-                return null;
-            }
+            return Id != null && Uri.TryCreate(Id, UriKind.Absolute, out var uri) 
+                ? uri.Segments[2].TrimEnd('/') 
+                : null;            
         }
     }
 }
